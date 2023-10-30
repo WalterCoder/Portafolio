@@ -398,7 +398,7 @@ footer{
         font-size: 3rem;
     }
     .projects-title{
-        margin-top:14.6rem;
+        margin-top: 14.6rem;
         font-size: 3rem;
 
     }
@@ -422,7 +422,7 @@ footer{
     .nav-menu {
         position: fixed;
         left: -100%;
-        top:88px;
+        top: 88px;
         gap: 0;
         flex-direction:column;
         background-color: rgba(0, 0, 0, 0.928);
