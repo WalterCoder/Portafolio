@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="portafolio.css">
+  <script src="https://kit.fontawesome.com/d64389bed0.js" crossorigin="anonymous"></script>
+  <title>ME...</title>
+</head>
+<body>
+   
+  <header>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link" ><i class="fa-solid fa-house"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link"><i class="fa-solid fa-briefcase"></i> Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Contact" class="nav-link"><i class="fa-solid fa-address-book"></i> Contact me</a>
+        </li>
+        
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="resume" href="img/FTRESUME.pdf" target="_blank">Resume <i class="fa-solid fa-download fa-beat"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<!--MAIN-->
+<!--SKILLS I HANDLE-->
+<main>
+  <h1>Skills & Technologies</h1>
+  
+  
+  <div class="gallery-wrap">
+
+    <img src="img/backarrow.png" id="backBtn">
+
+    <div class = "gallery">
+
+       
+        <div>
+          
+        <span class="gallery-item"> <img src="img/html.png"  title="Experienced">       </span>
+        <span class="gallery-item"> <img src="img/css.png"  title="Experienced">    </span>
+        <span class="gallery-item"> <img src="img/javascript.png" title="Basic"> </span>
+        
+        </div>
+    <div>
+
+        <span class="gallery-item"> <img src="img/bootstrap.png" title="Medium">    </span>
+        <span class="gallery-item"> <img src="img/react.png" title="Basic">       </span>
+        <span class="gallery-item"> <img src="img/git.png" title="Medium">         </span>
+        
+     </div>
+    </div>
+
+    <img src="img/nextarrow.jpg" id ="nextBtn">
+ </div>
+ 
+
+
+ <div class="about-me">
+  <botton class="reveal-btn"> About me <i class="fa-solid fa-user-secret"></i> </botton>
+<p class="hidden-content"> Hello! I'm Walter, a bilingual tech enthusiast and junior front-end developer who specializes in creating visually captivating websites. My journey doesn't stop here; I'm dedicated to becoming a full-stack developer. Explore web development and growth with me! <i class="fa-solid fa-code"></i></p>
+
+ </div>
+
+ <!--Projects-->
+ <section id="projects">
+<h1 class="projects-title">Projects </h1>
+
+<div class="projects">
+
+
+<div class="project"><img src=img/stopwatchbackground.jpg width = "379" height="300" alt="stopwatch">
+<div class="details">
+  <button><a href="stopwatch.html" project target="_blank">Check Stopwatch <i class="fa-solid fa-stopwatch-20"></i></a></button>
+  <button><a href="https://github.com/WalterCoder/stopwatch" target= "_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i> github code</button></a>
+   
+</div>
+</div>
+
+
+
+<div class="project"><img src=img/idiomsbackground.jpg width = "379" height="300"  alt="idioms">
+<div class="details">
+  <button><a href="project.html" target="_blank">Check English Idioms <i class="fa-solid fa-book"></i></a></button>
+  <button><a href="https://github.com/WalterCoder/idioms-in-english" target= "_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i> github code</button></a>
+</div>
+</div>
+
+
+
+<div class="project"><img src=img/to-dolistbackground.jpg width = "379" height="300"  alt="to-dolist">
+<div class="details">
+<button><a href="todolist.html" target="_blank"> Check To-do list <i class="fa-solid fa-list-check"></i></a></button>
+<button><a href="https://github.com/WalterCoder/to-dolist" target= "_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i> github code</button></a>
+
+</div>
+</div>
+
+
+<div class="project"><img src=img/quizbackground4.jpg width = "379" height="300"  alt="QUIZ" title= "CLICK ON CHECK">
+  <div class="details">
+  <button><a href="englishQuiz.html" target="_blank">Check Grammar English Quiz <i class="fa-solid fa-puzzle-piece"></i></a></button>
+  <button><a href="https://github.com/WalterCoder/englishquiz.git" target= "_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i> github code</button></a>
+  
+  </div>
+  </div>
+
+
+  <div class="project"><img src=img/coming.jpg width = "379" height="300"  alt="not yet" title= "working on it">
+    <div class="details">
+      <button><a href="project.html" target="_blank">Working on it... <i class="fa-solid fa-book"></i></a></button>
+      <button><a href="https://github.com/WalterCoder/idioms-in-english" target= "_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i> github code</button></a>
+    </div>
+    </div>
+
+    <div class="project"><img src=img/coming.jpg width = "379" height="300"  alt="not yet" title="working on it">
+      <div class="details">
+        <button><a href="project.html" target="_blank">Working on it... <i class="fa-solid fa-book"></i></a></button>
+        <button><a href="https://github.com/WalterCoder/idioms-in-english" target= "_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i> github code</button></a>
+      </div>
+      </div>
+
+
+</div>
+</div>
+</section>
+
+  </main>
+
+  <!--CONTACT SECTION-->
+  
+    <section id="Contact">
+    <h1>Contact Me</h1>
+    <div class="hero">
+   
+      <form onsubmit="sendEmail(); reset(); return false;"><!--I MIGHT NEED TO DELETE THESE-->
+        <div class="row">
+          <div class="input-group">
+            <input type="text" id ="name"  placeholder required>
+            <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id = "number" required>
+            <label for="number"><i class="fa-solid fa-phone"></i> Phone No.</label>
+          </div>
+        </div>
+        
+      <div class="input-group">
+        <input type="email" id ="email" required>
+        <label for="email"><i class="fa-solid fa-envelope"></i> Email Id</label>
+      </div>
+      <div class="input-group">
+        <textarea id="message" rows="8" required></textarea>
+        <label for="message"><i class="fa-solid fa-message"></i> Your Message</label>
+      </div>
+      <button class="contact-button" type="submit">SUBMIT <i class="fa-solid fa-paper-plane"></i></button>
+
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <hr>
+    <div class="social-media">
+      <a href="https://sv.linkedin.com/in/walter-palacios-b88a01253"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+      <a href="https://github.com/WalterCoder"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+      <a href="https://wa.me/50379792438?text=Hi%21%20I've%20seen%20your%20portfolio..."> <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i></a>
+      <a href="www.linkedin.com/in/walter-palacios-b88a01253"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+     
+    
+    </div>
+
+    <p class="copyright">&copy; 2023 Walter Palacios. All rights reserved.</p> 
+
+  </footer>
+
+
+  <script src="https://smtpjs.com/v3/smtp.js"> </script>
+  <script src="pf.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</body>
+</html>
