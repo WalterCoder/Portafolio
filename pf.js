@@ -63,23 +63,33 @@ navMenu.classList.remove("active");
 
   //CONTACT FORM
 
-  function sendEmail() {
-    Email.send({
-      Host: "smtp.gmail.com",
-      Username: "full.walter.stack@gmail.com",
-      Password: "nekito007",
-      To: 'full.walter.stack@gmail.com',
-      From: document.getElementById("email").value,
-      Subject: "New Contact Form Enquiry",
-      Body: "Name: " + document.getElementById("name").value
-        + "<br> Email: " + document.getElementById("email").value
-        + "<br> Phone no: " + document.getElementById("phone").value
-        + "<br> Message: " + document.getElementById("message").value
-    }).then(
-      message => alert("Message Sent Successfully")
-    );
-  }
+   function sendMail() {
+        var params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            number: document.getElementById("number").value,
+            message: document.getElementById("message").value,
+        };
 
- 
+        const serviceID = "service_pzdbqom";
+        const templateID = "template_6a0173q";
+
+        emailjs
+            .send(serviceID, templateID, params)
+            .then((res) => {
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("number").value = "";
+                document.getElementById("message").value = "";
+                alert("MESSAGE SENT SUCCESSFULLY");
+            })
+            .catch((err) => console.log(err));
+    }
+
+    document.getElementById("myForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+        sendMail(); // Call your sendMail function
+    });
+
 
   
