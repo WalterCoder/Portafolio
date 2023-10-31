@@ -90,6 +90,15 @@ navMenu.classList.remove("active");
         event.preventDefault(); // Prevent the default form submission behavior
         sendMail(); // Call your sendMail function
     });
+//PRELOADER
+
+let loader = document.getElementById('preloader')
+
+window.addEventListener("load", function(){
+    loader.style.display = "none"
+
+
+})
 
 
   
